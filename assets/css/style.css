@@ -99,6 +99,10 @@ img {
 .navbar .nav-link.active {
     color: var(--color-brand);
 }
+.navbar-brand{
+    width: 60%;
+}
+
 
 @media (min-width: 992px) {
     .navbar {
@@ -108,7 +112,9 @@ img {
         background-size: cover;
         background-position: center;
     }
-
+    .navbar-brand{
+        width: 100%;
+    }
 
     /* CONTENT WRAPPER */
     #content-wrapper {
