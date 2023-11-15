@@ -43,7 +43,14 @@ img {
 .bg-base {
     background-color: var(--color-base);
 }
-
+#content-wrapper video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .full-height {
     min-height: 100vh;
     height: 100%;
@@ -82,7 +89,7 @@ img {
 .navbar .nav-link {
     font-weight: 700;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--color-base2);
 }
 
 .navbar .nav-link:hover {
@@ -97,14 +104,11 @@ img {
     .navbar {
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgba(93, 95, 95, 0.8), rgba(68, 69, 70, 0.8)), url(../images/sidebar-img.png);
+        background: linear-gradient(rgb(210, 206, 206), rgba(230, 231, 232, 0.8)), url(../images/sidebar-img.png);
         background-size: cover;
         background-position: center;
     }
 
-    .navbar-brand img {
-        border: 8px solid var(--color-brand);
-    }
 
     /* CONTENT WRAPPER */
     #content-wrapper {
